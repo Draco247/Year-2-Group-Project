@@ -1,0 +1,65 @@
+.loginform{
+    margin: auto;
+    width: 60vw;
+    border: 3px solid black;
+    padding: 10px;
+    /*background-color: white;*/
+    border-radius: 20px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    /*height: 100vh;*/
+
+
+}
+
+.textInput {
+    display: inline-block;
+    width: 70vw;
+    text-align: left;
+
+}
+
+.textInput input[type="password"]{
+    margin-bottom: 10px;
+    /*border-top-left-radius: 0;*/
+    /*border-top-right-radius: 0;*/
+    width: 80%;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+.textInput input[type="text"]{
+    margin-bottom: 10px;
+    /*border-top-left-radius: 0;*/
+    /*border-top-right-radius: 0;*/
+    width: 80%;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.responsebox {
+    margin: auto;
+    width: 80vw;
+    border: 3px solid black;
+    padding: 10px;
+    /*background-color: white;*/
+    border-radius: 20px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+
+}

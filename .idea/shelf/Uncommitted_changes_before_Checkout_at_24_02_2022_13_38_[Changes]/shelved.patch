@@ -1,0 +1,23 @@
+Index: Backend/src/main/java/com/example/demoApp/model/Comment.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.demoApp.model;\r\n\r\nimport lombok.*;\r\n\r\nimport javax.persistence.*;\r\nimport javax.validation.constraints.NotEmpty;\r\nimport java.time.Instant;\r\nimport java.time.LocalDateTime;\r\n\r\nimport static javax.persistence.FetchType.LAZY;\r\nimport static javax.persistence.GenerationType.IDENTITY;\r\n\r\n@Data\r\n@Getter\r\n@Setter\r\n@AllArgsConstructor\r\n@NoArgsConstructor\r\n@Entity\r\npublic class Comment {\r\n    @Id\r\n    @GeneratedValue(strategy = IDENTITY)\r\n    private Long id;\r\n\r\n\r\n\r\n    @Column(columnDefinition = \"TEXT\")\r\n    private String content;\r\n    @ManyToOne(fetch = LAZY)\r\n    @JoinColumn(name = \"postId\", referencedColumnName = \"postId\")\r\n    private Post post;\r\n\r\n    private Instant createdDate;\r\n\r\n\r\n\r\n//    public void setDate(LocalDateTime now) {\r\n//    }\r\n    @ManyToOne(fetch = LAZY)\r\n    @JoinColumn(name = \"userId\", referencedColumnName = \"userId\")\r\n    private User user;\r\n\r\n\r\n\r\n\r\n    public void setPost(Post post) {\r\n        this.post = post;\r\n    }\r\n\r\n    public void setContent(String content) {\r\n        this.content = content;\r\n    }\r\n}
+===================================================================
+diff --git a/Backend/src/main/java/com/example/demoApp/model/Comment.java b/Backend/src/main/java/com/example/demoApp/model/Comment.java
+--- a/Backend/src/main/java/com/example/demoApp/model/Comment.java	
++++ b/Backend/src/main/java/com/example/demoApp/model/Comment.java	
+@@ -1,5 +1,6 @@
+ package com.example.demoApp.model;
+ 
++import com.fasterxml.jackson.annotation.JsonIgnore;
+ import lombok.*;
+ 
+ import javax.persistence.*;
+@@ -27,6 +28,7 @@
+     private String content;
+     @ManyToOne(fetch = LAZY)
+     @JoinColumn(name = "postId", referencedColumnName = "postId")
++    @JsonIgnore
+     private Post post;
+ 
+     private Instant createdDate;

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville');
+.table{
+    border: 2px solid black;
+}
+
+/*tr {*/
+/*    border: 1px solid black;*/
+/*    height: 75px;*/
+/*}*/
+
+.sideTable {
+    float: left;
+    border: 2px solid black;
+    margin: 5px;
+    font-family: 'Fjalla One', sans-serif;
+    /*width: 450px;*/
+    /*height: 600px;*/
+    width: 28%;
+    height: 100%;
+    font-size: 2vw;
+    text-align: center;
+    padding: 25px;
+    border-collapse: separate;
+    border-spacing: 0 1em;
+    background: #23a6d5;
+}
+
+.topTable {
+    ;
+    float: right;
+    border: 2px solid black;
+    margin: 5px;
+    font-family: 'Fjalla One', sans-serif;
+    /*width: 880px;*/
+    /*height: 295px;*/
+    width: 65%;
+    height: 42vh;
+    font-size: 2vw;
+    text-align: center;
+    padding: 25px;
+    background: #23a6d5;
+}
+
+/*.topTableTD {*/
+/*    border: 1px solid black;*/
+/*}*/
+
+.bottomTable {
+    float: right;
+    border: 2px solid black;
+    margin: 5px;
+    /*width: 880px;*/
+    /*height: 295px;*/
+    width: 65%;
+    height: 42vh;
+    font-size: x-large;
+    text-align: center;
+    padding: 25px;
+    background: #23a6d5;
+}
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+th {
+    color: black;
+    text-align: center;
+    border-bottom: 1px solid;
+}
+
+tr ul{
+    /*border: 1px solid;*/
+    text-align: center;
+    margin-right: 25px;
+    /*border-bottom: 1px solid;*/
+}
+
+.image {
+    float: right;
+    border: 2px solid black;
+    margin: 5px;
+    /*width: 880px;*/
+    /*height: 295px;*/
+    width: 65%;
+    height: 42vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*font-size: x-large;*/
+    /*text-align: center;*/
+    padding: 0px;
+    /*background-image: url(background.jpg);*/
+}

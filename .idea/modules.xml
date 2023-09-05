@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cs2001-2021_22-group-20-2021.iml" filepath="$PROJECT_DIR$/cs2001-2021_22-group-20-2021.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Backend/demoApp.iml" filepath="$PROJECT_DIR$/Backend/demoApp.iml" />
+    </modules>
+  </component>
+</project>

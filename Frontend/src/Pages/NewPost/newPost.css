@@ -1,0 +1,115 @@
+.createnewpost {
+    padding-top: 50px;
+}
+
+/*.postImg {*/
+/*    margin-left: 150px;*/
+/*    width: 70vw;*/
+/*    height: 250px;*/
+/*    border-radius: 10px;*/
+/*    object-fit: cover;*/
+/*}*/
+
+.newpostForm {
+    position: relative;
+}
+
+.newpostFormGroup {
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+}
+
+/*.writeIcon {*/
+/*    width: 25px;*/
+/*    height: 25px;*/
+/*    font-size: 20px;*/
+/*    border: 1px solid;*/
+/*    border-radius: 50%;*/
+/*    color: rgb(129, 125, 125);*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    cursor: pointer;*/
+/*}*/
+
+.newpostInput {
+    font-size: 30px;
+    /*border: none;*/
+    padding: 20px;
+    width: 70vw;
+    border-radius: 20px;
+    border: 3px solid black;
+    text-align: center;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+}
+
+.newpostInput::placeholder {
+    color: black;
+    font-weight: 800;
+}
+
+.newpostInput:focus {
+    outline-style: none;
+}
+
+.newpostText {
+    width: 70vw;
+    height: 100vh;
+    font-family: inherit;
+    font-size: 20px;
+    border-radius:20px;
+}
+
+.newpostSubmit {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.responsebox {
+    /*margin: auto;*/
+    margin-right: 26vw;
+    width: 50vw;
+    border: 3px solid black;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.tags {
+    width: 90vw;
+    font-weight: bold;
+    margin-right: 5vw;
+    /*background: red;*/
+    /*height: 200px;*/
+    /* Center child horizontally*/
+    display: flex;
+    justify-content: center;
+
+}

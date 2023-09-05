@@ -1,0 +1,103 @@
+.profile {
+    flex: 9;
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.profileWrapper
+{
+    flex: 9;
+    padding: 20px;
+}
+
+.profileTitle
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profileSettings {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.profileForm
+{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin: 0 auto;
+    border: 3px solid black;
+    padding: 10px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    border-radius: 10px;
+}
+
+.profileForm > label {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.profileForm > input {
+    color: black;
+    margin: 10px 0;
+    height: 30px;
+    /*border: none;*/
+    /*border-bottom: 1px solid lightgray;*/
+    border: 3px solid black;
+    border-radius: 5px;
+
+}
+
+.ProfileSettingsSubmitButton{
+    width: 150px;
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.responsebox {
+    margin: auto;
+    width: 40vw;
+    border: 3px solid black;
+    padding: 10px;
+    /*background-color: white;*/
+    border-radius: 20px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
